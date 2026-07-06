@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raíz — Sostenibilidad que se adapta a tu vida</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #EFEAD9;
+    --ink: #1F2E23;
+    --accent: #C9A227;
+    --sage: #7C9473;
+    --card: #FBF8EF;
+    --line: #D9D2B8;
+  }
+  body{ background: #EFEAD9; color: #1F2E23; font-family: 'Inter', sans-serif; }
+  .font-display{ font-family: 'Space Grotesk', sans-serif; }
+  .font-mono{ font-family: 'IBM Plex Mono', monospace; }
+  .thread{
+    position: relative;
+  }
+  .thread::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: repeating-linear-gradient(to bottom, #7C9473 0, #7C9473 6px, transparent 6px, transparent 12px);
+    transform: translateX(-50%);
+    opacity: 0.5;
+  }
+  @media (max-width: 768px){ .thread::before{ display:none; } }
+  .node-dot{
+    width: 14px; height: 14px; border-radius: 999px;
+    background: #C9A227;
+    box-shadow: 0 0 0 6px #EFEAD9;
+  }
+  .focus-ring:focus-visible{
+    outline: 3px solid #C9A227;
+    outline-offset: 3px;
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .rise{ animation: rise .7s ease-out both; }
+    @keyframes rise{ from{ opacity:0; transform: translateY(14px);} to{opacity:1; transform:translateY(0);} }
+  }
+</style>
+</head>
+<body class="antialiased">
+
+  <!-- NAV -->
+  <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+    <div class="font-display font-semibold text-xl tracking-tight">Raíz</div>
+    <nav class="hidden md:flex items-center gap-8 font-mono text-sm">
+      <a href="#como-funciona" class="hover:text-[#7C9473] transition-colors">Cómo funciona</a>
+      <a href="#confianza" class="hover:text-[#7C9473] transition-colors">Confianza</a>
+      <a href="#unete" class="hover:text-[#7C9473] transition-colors">Únete</a>
+    </nav>
+    <a href="#unete" class="focus-ring rounded-full bg-[#1F2E23] text-[#EFEAD9] px-5 py-2 text-sm font-medium hover:opacity-90 transition-opacity">
+      Probar antes que nadie
+    </a>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto px-6 pt-10 pb-24 grid md:grid-cols-2 gap-12 items-center">
+    <div class="rise">
+      <p class="font-mono text-sm text-[#7C9473] mb-4 tracking-wide">SOSTENIBILIDAD SIN AGOBIO</p>
+      <h1 class="font-display text-5xl md:text-6xl font-semibold leading-[1.05] tracking-tight mb-6">
+        No necesitas cambiar tu vida.<br>
+        <span class="text-[#7C9473]">Solo un hábito, hoy.</span>
+      </h1>
+      <p class="text-lg text-[#1F2E23]/80 max-w-md mb-8 leading-relaxed">
+        Raíz conecta una única recomendación sostenible con algo que ya haces cada día. Sin listas, sin culpa, sin números que no entiendes.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#unete" class="focus-ring rounded-full bg-[#C9A227] text-[#1F2E23] px-7 py-3 font-medium hover:brightness-95 transition">
+          Quiero probarlo
+        </a>
+        <a href="#como-funciona" class="focus-ring rounded-full border border-[#1F2E23]/20 px-7 py-3 font-medium hover:bg-[#1F2E23]/5 transition">
+          Ver cómo funciona
+        </a>
+      </div>
+    </div>
+
+    <div class="rise" style="animation-delay:.15s">
+      <img src="images/ciclista.jpg" alt="Joven montando en bicicleta al aire libre"
+        class="w-full h-auto rounded-2xl object-cover" style="aspect-ratio: 4/5; object-position: center 30%;">
+    </div>
+  </section>
+
+  <!-- DOODLE STRIP -->
+  <div class="max-w-4xl mx-auto px-6 -mt-6 mb-6 opacity-90">
+    <img src="images/vector-medioambiente.jpg" alt="Ilustración doodle de manos sosteniendo símbolos de energía renovable: agua, planta, planeta, molino eólico y bombilla"
+      class="w-full h-auto rounded-xl">
+  </div>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="bg-[#FBF8EF] border-y border-[#D9D2B8]">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <div class="mb-16 max-w-xl">
+        <p class="font-mono text-sm text-[#7C9473] mb-3">CÓMO FUNCIONA</p>
+        <h2 class="font-display text-4xl font-semibold tracking-tight">Tres ideas, una sola experiencia.</h2>
+      </div>
+
+      <div class="thread grid md:grid-cols-3 gap-x-10 gap-y-16">
+
+        <div class="rise text-center md:text-left">
+          <div class="flex md:block justify-center mb-4">
+            <span class="node-dot inline-block"></span>
+          </div>
+          <svg viewBox="0 0 64 64" class="w-12 h-12 mb-4 mx-auto md:mx-0" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="none" stroke="#7C9473" stroke-width="2"/>
+            <path d="M20 34 L28 42 L44 22" stroke="#C9A227" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3 class="font-display text-xl font-semibold mb-2">Se ancla a lo que ya haces</h3>
+          <p class="text-[#1F2E23]/75 leading-relaxed">
+            No añadimos tareas nuevas. Detectamos una rutina que ya tienes —tu trayecto, tu compra semanal— y sugerimos un pequeño cambio ahí mismo.
+          </p>
+        </div>
+
+        <div class="rise text-center md:text-left" style="animation-delay:.1s">
+          <div class="flex md:block justify-center mb-4">
+            <span class="node-dot inline-block"></span>
+          </div>
+          <svg viewBox="0 0 64 64" class="w-12 h-12 mb-4 mx-auto md:mx-0" aria-hidden="true">
+            <path d="M32 6 L54 16 V32 C54 46 44 54 32 58 C20 54 10 46 10 32 V16 Z" fill="none" stroke="#7C9473" stroke-width="2"/>
+            <path d="M32 22 V38 M24 30 H40" stroke="#C9A227" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <h3 class="font-display text-xl font-semibold mb-2">Te decimos de dónde sale el dato</h3>
+          <p class="text-[#1F2E23]/75 leading-relaxed">
+            Cada recomendación indica su origen. Nada de "marketing verde": si algo viene de una colaboración, lo verás etiquetado con claridad.
+          </p>
+        </div>
+
+        <div class="rise text-center md:text-left" style="animation-delay:.2s">
+          <div class="flex md:block justify-center mb-4">
+            <span class="node-dot inline-block"></span>
+          </div>
+          <svg viewBox="0 0 64 64" class="w-12 h-12 mb-4 mx-auto md:mx-0" aria-hidden="true">
+            <path d="M12 40 Q22 20 32 40 T52 40" stroke="#7C9473" stroke-width="2" fill="none"/>
+            <circle cx="32" cy="40" r="4" fill="#C9A227"/>
+            <path d="M20 50 Q32 46 44 50" stroke="#C9A227" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+          <h3 class="font-display text-xl font-semibold mb-2">Baja el ritmo si tú lo necesitas</h3>
+          <p class="text-[#1F2E23]/75 leading-relaxed">
+            Si notamos que necesitas un respiro, reducimos los mensajes por nuestra cuenta. Sin insistir, sin "te echamos de menos".
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIANZA / CONTEXTO -->
+  <section id="confianza" class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+    <div class="order-2 md:order-1 rise">
+      <img src="images/mujer-cocinando.jpg" alt="Mujer cocinando una sopa de verduras en su cocina"
+        class="w-full h-auto rounded-2xl object-cover" style="aspect-ratio: 4/5; object-position: center 20%;">
+    </div>
+    <div class="order-1 md:order-2 rise">
+      <p class="font-mono text-sm text-[#7C9473] mb-3">POR QUÉ RAÍZ</p>
+      <h2 class="font-display text-4xl font-semibold tracking-tight mb-6 leading-tight">
+        Hecho para quien ya lo ha intentado y se ha cansado.
+      </h2>
+      <p class="text-[#1F2E23]/80 leading-relaxed mb-6">
+        No eres tú. Es el diseño de la mayoría de apps de sostenibilidad: paneles de datos, culpa por lo que no haces, y el mismo lenguaje "eco" de siempre. Raíz parte de otra premisa: menos ruido, más confianza, y espacio para avanzar a tu ritmo.
+      </p>
+      <ul class="space-y-3 font-mono text-sm text-[#1F2E23]/70">
+        <li class="flex gap-3"><span class="text-[#C9A227]">—</span> Sin comparaciones con otros usuarios</li>
+        <li class="flex gap-3"><span class="text-[#C9A227]">—</span> Sin contadores de "lo que no hiciste"</li>
+        <li class="flex gap-3"><span class="text-[#C9A227]">—</span> Sin lenguaje de marketing verde vacío</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section id="unete" class="bg-[#1F2E23] text-[#EFEAD9]">
+    <div class="max-w-2xl mx-auto px-6 py-24">
+      <p class="font-mono text-sm text-[#C9A227] mb-3 text-center">ACCESO ANTICIPADO</p>
+      <h2 class="font-display text-4xl font-semibold tracking-tight mb-4 text-center">
+        Sé de las primeras personas en probarlo
+      </h2>
+      <p class="text-[#EFEAD9]/70 text-center mb-10 leading-relaxed">
+        Déjanos tu email y te avisaremos en cuanto puedas empezar a usar Raíz. Sin spam, sin compromiso.
+      </p>
+
+      <form action="https://formsubmit.co/avg0050fotos@gmail.com" method="POST" class="bg-[#FBF8EF] text-[#1F2E23] rounded-2xl p-8 space-y-5">
+        <input type="hidden" name="_subject" value="Nuevo interesado en Raíz">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div>
+          <label for="nombre" class="block font-mono text-xs uppercase tracking-wide mb-2 text-[#1F2E23]/60">Nombre</label>
+          <input type="text" id="nombre" name="Nombre" required
+            class="focus-ring w-full rounded-lg border border-[#D9D2B8] bg-white px-4 py-3 outline-none"
+            placeholder="Tu nombre">
+        </div>
+
+        <div>
+          <label for="email" class="block font-mono text-xs uppercase tracking-wide mb-2 text-[#1F2E23]/60">Email</label>
+          <input type="email" id="email" name="Email" required
+            class="focus-ring w-full rounded-lg border border-[#D9D2B8] bg-white px-4 py-3 outline-none"
+            placeholder="tucorreo@email.com">
+        </div>
+
+        <div>
+          <label for="habito" class="block font-mono text-xs uppercase tracking-wide mb-2 text-[#1F2E23]/60">
+            ¿Qué te gustaría mejorar? (opcional)
+          </label>
+          <select id="habito" name="Interés principal"
+            class="focus-ring w-full rounded-lg border border-[#D9D2B8] bg-white px-4 py-3 outline-none">
+            <option value="Alimentación">Alimentación</option>
+            <option value="Transporte">Transporte</option>
+            <option value="Consumo">Consumo</option>
+            <option value="Energía en casa">Energía en casa</option>
+            <option value="No lo sé todavía">No lo sé todavía</option>
+          </select>
+        </div>
+
+        <button type="submit"
+          class="focus-ring w-full rounded-full bg-[#C9A227] text-[#1F2E23] px-7 py-3 font-medium hover:brightness-95 transition">
+          Quiero acceso anticipado
+        </button>
+
+        <p class="font-mono text-xs text-[#1F2E23]/50 text-center pt-2">
+          Al enviar este formulario, recibirás un email de confirmación la primera vez.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="max-w-6xl mx-auto px-6 py-10 flex flex-col gap-3 font-mono text-sm text-[#1F2E23]/60">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <span>© 2026 Raíz — Proyecto de TFM, Máster en Inteligencia Artificial</span>
+      <a href="mailto:avg0050fotos@gmail.com" class="hover:text-[#7C9473] transition-colors">avg0050fotos@gmail.com</a>
+    </div>
+    <p class="text-xs opacity-70 text-center md:text-left">Vector de rawpixel.com - Freepik</p>
+  </footer>
+
+</body>
+</html>
